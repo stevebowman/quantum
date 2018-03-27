@@ -27,6 +27,9 @@
                 {
                     Set (initial, qubits[0]);
 
+                    // Create superposition - 50% zero and 50% one
+                    H(qubits[0]);
+
                     let res = M (qubits[0]);
 
                     // Count the number of ones we saw:
