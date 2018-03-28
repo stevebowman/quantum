@@ -9,10 +9,12 @@ namespace Bell
         {
             using (var sim = new QuantumSimulator())
             {
-                Result[] initials = new Result[] { Result.Zero, Result.One };
+                Result[] initials = { Result.Zero, Result.One };
 
                 foreach (Result initial in initials)
                 {
+                    // Do 1000 runs on the simular.
+                    // Run() is async so call Result to make it synchronous.
                     var res = BellTest.Run(sim, 1000, initial).Result;
 
                     var (numZeros, numOnes, agree) = res;

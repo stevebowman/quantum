@@ -57,6 +57,7 @@
                 }
 
                 // Need to reset the qubit back to zero now we have finished with it.
+				// (Why doesn't the using statement do this automatically?)
                 Set(Zero, qubits[0]);
                 Set(Zero, qubits[1]);
             }
