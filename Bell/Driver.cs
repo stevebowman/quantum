@@ -1,4 +1,5 @@
-﻿using Microsoft.Quantum.Simulation.Core;
+﻿using System;
+using Microsoft.Quantum.Simulation.Core;
 using Microsoft.Quantum.Simulation.Simulators;
 
 namespace Bell
@@ -25,8 +26,8 @@ namespace Bell
 
             }
 
-            System.Console.WriteLine("Press any key to continue...");
-            System.Console.ReadKey();
+            Console.WriteLine("Press any key to continue...");
+            Console.Read();
         }
     }
 }
